@@ -11,9 +11,9 @@ async function report() {
   const inputUrl = readlineSync.question("URL: ");
 
   await page.goto(inputUrl);
-//   await page.screenshot({ path: "img/teste.png" });
+  await page.screenshot({ path: "img/capture.png" });
 
-//   console.log(await terminalImage.file("img/teste.png"));
+  console.log("Create archive img/capture.png");
   await browser.close();
 }
 
